@@ -1,16 +1,39 @@
-.navbar {
-  background: rgb(225, 255, 255);
-  padding: 0;
-  border-bottom: 1px solid #eee;
+h1 {
+  font-size: 50px;
 }
 
 
+h3 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+span {
+  font-size: 16px;
+}
+
+.navbar {
+  padding: 0;
+  z-index: 9999;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
 
 .navbar .nav-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgb(255, 255, 255);
 }
 
 .navbar .nav-header .nav-left {
@@ -112,6 +135,7 @@
   .submenu
   li:hover {
   background: #8364e2;
+  color: #fff;
 }
 
 .navbar .nav-header .nav-right .button-nav-connect button {
@@ -207,8 +231,220 @@
   text-align: left;
 }
 
+.color {
+  color: #8364e2;
+}
+
+.color-white {
+  color: rgb(12,12,34);
+}
 
 /* menu mobile */
+
+
+/* banner header */
+.banner-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(../images/11.jpg);
+}
+
+.breadcumb {
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.spacer-single {
+  height: 30px;
+}
+
+.spacer-10 {
+  width: 100%;
+  height: 10px;
+  display: block;
+  clear: both;
+}
+
+
+.btn-main {
+  width: max-content;
+  text-align: center;
+  color: #fff;
+  background: #8364e2;
+  border-radius: 6px;
+  letter-spacing: normal;
+  outline: 0;
+  padding: 8px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  box-shadow: 2px 2px 20px 0 rbg(131 100 226/0%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-main.inline {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.btn-main.inline.white {
+  background: rgba(131, 100, 255, 0.2);
+}
+
+.btn-main.inline.white {
+  color: #403f83;
+}
+
+.btn-main:hover {
+  box-shadow: 10px 10px 20px 0 rgba(131, 100, 255, 0.2);
+}
+
+h1.color-white span {
+  font-size: 50px;
+}
+
+.banner-header h1.color-white {
+  margin-bottom: 20px;
+}
+
+.css-2yud30 {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+  animation-delay: 300ms;
+  animation-name: animation-tx4hyv;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.css-2yud60 {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+  animation-delay: 600ms;
+  animation-name: animation-tx4hyv;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.css-2yud80 {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+  animation-delay: 800ms;
+  animation-name: animation-tx4hyv;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.css-2yud90 {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+  animation-delay: 900ms;
+  animation-name: animation-tx4hyv;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation-tx4hyv {
+  0%{
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+p.lead {
+  font-size: 18px;
+  line-height: 1.7em;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+
+/* banner header */
+
+
+/* option menu icon */
+.option-memnu {
+  padding: 70px 0;
+}
+
+.option-memnu .icon-box {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: rgba(133,100,226,.1);
+  transition: 0.3s;
+}
+
+.option-memnu .icon-box i {
+  display: block;
+  font-size: 40px;
+  color: #8364e2;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.option-memnu .icon-box span {
+  display: block;
+  color: #606060;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.option-memnu .icon-box:hover {
+  background-color: #403f83;
+  box-shadow: 5px 5px 5px 10px rgba(131, 100, 255, 0.2);
+}
+
+.option-memnu .icon-box:hover i {
+  color: #fff;
+}
+
+.option-memnu .icon-box:hover span {
+  color: #fff;
+}
+
+/* option menu icon */
+
+.pb60 {
+  padding: 60px 0;
+}
+
+.pb60 h2 {
+  margin-bottom: 20px;
+}
+
+.yelbg {
+  background-color: rgb(255, 249, 225);
+}
+
+.yelbg-2 {
+  background-color: rgb(247, 255, 231);
+}
+
+.greybg {
+  background-color: rgb(246, 245, 251);
+}
 
 /* footer */
 .footer-end {
@@ -322,6 +558,12 @@
   }
   .navbar .menu-mobile {
     padding: 0px 4% 20px 4%;
+  }
+  .banner-header {
+    background-image: none;
+  }
+  .navbar.sticky {
+    position: absolute;
   }
 }
 @media only screen and (max-width: 1024px) {

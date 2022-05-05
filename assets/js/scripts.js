@@ -3,7 +3,19 @@
     $(document).ready(function () {
       showMenuMobile();
       showMenuMobileChiu();
+      $(window).scroll(function () {
+				bgScrollHeader();
+			});
     });
+    function bgScrollHeader() {
+      let el = $(".navbar");
+      if($(window).scrollTop() > 0) {
+        el.addClass("sticky");
+      } else {
+        el.removeClass("sticky");
+      }
+    }
+
     function showMenuMobile() {
       const el = $(".button-menu");
       let click = false;
